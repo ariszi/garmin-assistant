@@ -1,0 +1,15 @@
+[project]
+name = "garmin-assistant"
+version = "0.1.0"
+description = "Personal Garmin MCP wrapper"
+requires-python = ">=3.12"
+
+dependencies = [
+    "garmin-mcp @ git+https://github.com/Taxuspt/garmin_mcp",
+    "garmindb",
+    "mcp[cli]",
+    "python-dotenv",
+]
+
+[project.scripts]
+garmin-assistant = "main:run"
